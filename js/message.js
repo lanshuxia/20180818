@@ -34,7 +34,7 @@ function videoCon(){
             //相应高度也增加了,播放器控件被挤下去，配合overflow：hidden
             //控件看不见也触摸不到了
             function  setVideoStyle(){
-                videobox.style.width = '100%';
+                videobox.style.width = '50%';
                 video.style.width = '100%';
                 videobox.style.display = 'block';
             }
