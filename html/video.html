@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广告上传</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no"> <!--清除iPhone中默认样式-->
+    <meta http-equiv="pragma" content="no-cache"> <!--不缓存-->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> <!--不缓存-->
+    <link rel="stylesheet" href="../lib/layer/skin/layer.css">
+    <link rel="stylesheet" href="../css/video.css">
+
+
+</head>
+<body>
+
+<!--header-->
+<div class="header">广告上传</div>
+<!--content-->
+<div class="advertising">
+    <div class="advertising-con">
+        <div class="ad-tab">
+            <ul class="tab-title">
+                <li class="tab-title-active">15s</li>
+                <li>30s</li>
+                <input type="hidden" id="title-hidden" value="15" >
+            </ul>
+            <ul class="tab-con">
+                <input type="file" name="video" id="videoForm" accept="video/*"/>
+                <img src="../img/video.png" alt="" class="video-img">
+                <div class="video-con">
+                    <video id="video" src="" autoplay  preload="auto" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-playsinline="true" ></video>
+                </div>
+            </ul>
+            <ul class="tab-describe">
+                <li class="tab-describe-active">1天播放180次，视频大小不超过40M</li>
+                <li>1天播放90次，视频大小不超过60M</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ad-button">下一步</div>
+</div>
+</body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../lib/layer/layer.js"></script>
+<script src="../js/base.js"></script>
+<!--在html中引入jweixin.js-->
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="../js/video.js"></script>
+</html>

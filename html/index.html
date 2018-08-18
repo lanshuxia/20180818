@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>街柜</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../lib/layer/skin/layer.css">
+    <style type="text/css">
+    span.computer {
+    text-align: center;
+}
+._embed_v3_dc{
+	display: none;
+}
+.show_out{
+	color: red;
+}
+    </style>
+</head>
+
+<body ontouchstart>
+
+<header class='index-header'>
+    <div class="weui-flex">
+        <div class="logo">
+            <img src="../img/logo.png">
+        </div>
+        <a href="userInfo.html" class="userInfo">
+            <img src="../img/userId.png" alt="">
+        </a>
+    </div>
+</header>
+
+<div id="banner">
+
+</div>
+
+<div class="goodsList">
+
+    <div class="weui-tab">
+        <div class="weui-navbar">
+            <div class="weui-navbar__item weui-bar__item--on img1" href="#tab1">
+                <img src="../img/commondity.png" alt="">商品
+            </div>
+            <div class="weui-navbar__item img2" href="#tab2">
+               	<img src="../img/service.png" alt="">共享服务
+               	<input type="hidden" id="isBatteryFunction">
+            </div>
+            <div class="weui-navbar__item img3" href="#tab3">
+                <img src="../img/photo.png" alt="">照片打印
+            </div>
+        </div>
+        <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                <div class="weui-panel weui-panel_access">
+                    <div class="weui-panel__bd">
+                    </div>
+                </div>
+                <div class="weui-footer weui-footer_fixed-bottom">
+                    <span class="total_mount"> <img src="../img/gobar.png" style="width: 20px;padding-left: 5px;" /> <span>0</span> </span> <span class="total_price"> <img src="../img/money.png" style="width: 20px;padding-left: 5px;"/> <span>0.00</span> </span> <a href="javascript:;" class="weui-btn weui-btn_primary">确认订单</a>
+                </div>
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+                <!--共享服务-->
+                <div class="service">
+                    <ul class="service-con">
+                        <li class="service-list">
+                            <a href="javascript:;">
+                                <img src="../img/icon1.png" alt="">
+                                <p>充电宝</p>
+                            </a>
+                        </li>
+                        <li class="service-list">
+                            <a href="javascript:;">
+                                <img src="../img/icon2.png" alt="">
+                                <p>雨伞</p>
+                            </a>
+                        </li>
+                        <li class="service-list">
+                            <a href="video.html">
+                                <img src="../img/icon3.png" alt="">
+                                <p>广告</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="../img/powerBank.png">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">充电宝</h4>
+                        <p class="weui-media-box__desc">
+                            <span class="price">
+                                <span class="price_title">押金</span>: ￥<span class="price_mount"></span>
+                            </span>
+                            <span class="mount">
+                                <span class="mount_title">租金</span>: ￥<span class="mount_mount">1.0/h</span>
+                            </span>
+
+                        </p>
+                    </div>
+                </div>-->
+                <div class="weui-cells weui-cells_checkbox">
+                </div>
+                <div class="weui-footer weui-footer_fixed-bottom">
+                    <span class="total_mount"><img src="../img/gobar.png" style="width: 20px;padding-left: 5px;" /> <span>1</span> </span> <span class="total_price"><img src="../img/money.png" style="width: 20px;padding-left: 5px;"/><span></span> </span> <a href="javascript:;" class="weui-btn weui-btn_primary">确认订单</a>
+                </div>
+            </div>
+            <div id="tab3" class="weui-tab__bd-item">
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <div class="weui-uploader">
+                                <div class="weui-uploader__hd">
+                                    <p class="weui-uploader__title">选择照片</p>
+                                </div>
+                                <div class="weui-uploader__bd">
+                                    <div class="weui-uploader__input-box">
+                                            <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" >
+                                            <img src="" alt="" class="weui-uploader__file" id="pic">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-footer weui-footer_fixed-bottom">
+                    <span class="total_mount"><img src="../img/gobar.png" style="width: 20px;padding-left: 5px;" /> <span>1</span> </span> <span class="total_price"><img src="../img/money.png" style="width: 20px;padding-left: 5px;"/><span> </span> </span> <a href="javascript:;" class="weui-btn weui-btn_primary">确认订单</a>
+                </div>
+            </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=33Vg1nD22syFIGWOoMIicFUnr44v75Pl"></script>
+<script src="../lib/jquery-2.1.4.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/location.js"></script>
+<script src="../lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+
+<script src="../js/jquery-weui.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="../lib/layer/layer.js"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>

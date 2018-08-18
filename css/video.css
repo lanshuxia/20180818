@@ -1,0 +1,119 @@
+body,html,a,p,ul,li,input,ol,dl,dd,dt{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+/*header*/
+.header{
+    width:100%;
+    height:50px;
+    background:rgba(15,193,219,1);
+    text-align: center;
+    line-height:50px;
+    color:#fff;
+}
+/*advertising*/
+.advertising{
+    padding:10px 20px;
+}
+.advertising-con{
+    height:auto
+}
+.ad-tab{
+    width:100%;
+}
+.tab-title{
+    height:35px;
+    line-height:35px;
+    display: flex;
+    margin-bottom:20px;
+}
+.tab-title li{
+    width:49%;
+    margin-right:2%;
+    border-radius:5px;
+    text-align: center;
+    background:rgba(229,229,229,1);
+}
+.tab-title li:last-child{
+    margin-right:0;
+}
+.tab-title li.tab-title-active{
+    color:#fff;
+    background:rgba(15,193,219,1);
+}
+.tab-con{
+    width:100%;
+    height:223px;
+    position:relative;
+    background: -webkit-linear-gradient(left,#5AE4CA,#1AB7DC);
+}
+#videoForm{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    direction: ltr;
+}
+.video-img{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto auto;
+    width:45px;
+}
+.video-con{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    margin:0 auto;
+    overflow: hidden;
+}
+video {
+    height: 100%;
+    display: block;
+    margin:0 auto;
+}
+/*描述*/
+.tab-describe{
+    font-size:12px;
+    margin-top:6px;
+}
+.tab-describe li{
+    display: none;
+}
+.tab-describe li.tab-describe-active{
+    display: block;
+}
+/*button*/
+.ad-button{
+    margin-top:40px;
+    height:40px;
+    background:rgba(15,193,219,1);
+    border-radius:5px;
+    color:#fff;
+    text-align: center;
+    line-height:40px;
+}
+.tab-con li{
+    position:relative;
+}

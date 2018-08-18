@@ -1,0 +1,227 @@
+body,html,a,input,ul,li,dl,dd,dt,ol,form,p,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-family: '微软雅黑';
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+/*header*/
+.header{
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+    color:#fff;
+    background:rgba(15,193,219,1);
+}
+/*content*/
+.content{
+    padding:20px;
+    height:auto;
+    /*overflow: scroll;*/
+}
+.content-con{
+    width:100%;
+}
+.video-con{
+    width:100%;
+    padding-bottom:10px;
+    border-bottom:1px solid #E0E0E0;
+}
+.video-title{
+    color:#E0E0E0;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.video{
+    width:100px;
+    height:100px;
+    display: block;
+}
+.video-img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+
+
+/*投放设备*/
+.install-con{
+    width:100%;
+    padding:10px 0;
+    border-bottom:1px solid #E0E0E0;
+}
+.install-con p{
+    font-size: 18px;
+    color:#333;
+    font-weight: 700;
+}
+.map-con{
+    width:100%;
+    height:150px;
+    margin:10px  0;
+}
+.install-number{
+    width:100%;
+    height:auto;
+}
+.install-number ul{
+    height:auto;
+    overflow: hidden;
+}
+.install-number ul li{
+    float: left;
+    width:24%;
+    margin-bottom:10px;
+    margin-right:1%;
+    font-size:14px;
+    height:30px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    background: #E5E5E5;
+}
+.install-number ul li.active{
+    background:rgba(250,87,87,1);
+    color:#fff;
+}
+.install-number ul .all{
+    width:24%;
+    float: left;
+    border-radius: 15px;
+    line-height:30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:30px;
+    margin-bottom:10px;
+}
+.all p{
+    font-size:14px;
+    margin-right:3px;
+}
+.all img{
+    width:16px;
+}
+/*投放时间*/
+.time-con{
+    width:100%;
+    padding:10px 0 60px 0;
+}
+.time-con p{
+    font-size: 18px;
+    color:#333;
+    font-weight: 700;
+}
+.time-tab{
+    margin-top:10px;
+}
+.time-list{
+    display: flex;
+    margin-bottom:20px;
+}
+.time-list li{
+    width: 60px;
+    line-height: 30px;
+    margin-right:10px;
+    background: #E5E5E5;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.time-list li.list-active{
+    background: #0FC1DB;
+    color:#fff;
+}
+
+.time-item li{
+    display: none;
+}
+.time-item li.item-active{
+    display: block;
+}
+.item-left{
+    float: left;
+}
+.price{
+    width:30px;
+    border:none;
+}
+.item-right{
+    float: right;
+}
+.minus,.add{
+    width:20px;
+    height:20px;
+    display: block;
+    float: left;
+}
+.number{
+    width:40px;
+    float: left;
+    border: none;
+    text-align: center;
+    font-size:16px;
+    color:#333;
+}
+.minus img,.add img{
+    width:100%;
+}
+/*footer*/
+.footer{
+    width:100%;
+    height:45px;
+    position:fixed;
+    bottom:0;
+    border-top:1px solid #0FC1DB;
+    padding-left:20px;
+    background: #fff;
+}
+.footer-con{
+    height:100%;
+    line-height:45px;
+}
+.footer-con li{
+    width:33.3%;
+    float: left;
+    height:100%;
+    font-size:12px;
+}
+.footer-con li.orderBtn{
+    text-align: center;
+    background: #0FC1DB;
+    color:#fff;
+    font-size:14px;
+}
+
+.install-number ul li.devideName{
+    background: rgba(250,87,87,1);
+    color:#fff;
+}
+.install-number ul li.active{
+    background: rgba(250,87,87,1);
+    color:#fff;
+}
+
+/*遮罩*/
+.mask{
+    position:fixed;
+    top:0;
+    left:0;
+    background: #fff;
+    width:100%;
+    height:100%;
+    display: none;
+}

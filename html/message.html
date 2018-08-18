@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息编辑</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=1.0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no"> <!--清除iPhone中默认样式-->
+    <meta http-equiv="pragma" content="no-cache"> <!--不缓存-->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> <!--不缓存-->
+    <link rel="stylesheet" href="../lib/layer/skin/layer.css">
+    <link rel="stylesheet" href="../css/message.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../lib/layer/layer.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=4qMufTkWyNaIWPCSMI1g4tkHWqwW4uRG"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/message.js"></script>
+    <script src="../js/wxpay.js"></script>
+    <script src="../js/md5.js"></script>
+</head>
+<body>
+<!--header-->
+<div class="header">信息编辑</div>
+<!--content-->
+<div class="content">
+    <div class="content-con">
+        <div class="video-con">
+            <p class="video-title">请输入视频名称（不超过12个字符）</p>
+            <div class="video">
+                <video class="video-img" id="video-img" autoplay  preload="auto" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-playsinline="true">
+                    <source src="../10.mp4" id="video">
+                </video>
+            </div>
+
+        </div>
+        <!--投放设备-->
+        <div class="install-con">
+            <p>投放设备</p>
+            <div class="map-con" id="container"> </div>
+            <div id="r-result" style="display: none"></div>
+            <div class="install-number">
+                <ul></ul>
+            </div>
+        </div>
+        <!--投放时间-->
+        <div class="time-con">
+            <p>投放时间</p>
+            <div class="time-tab">
+                <ul class="time-list">
+                    <li class="list-active">按天</li>
+                    <li>按周</li>
+                    <input type="hidden" id="time-hidden" value="1">
+                </ul>
+                <ul class="time-item">
+                    <li class="item-active">
+                        <div class="item-left">1天 ￥<input class="price" value="90">/台</div>
+                        <div class="item-right">
+                            <span class="minus"><img src="../img/minus.png" alt=""></span>
+                            <input type="text" class="number" value="1">
+                            <span class="add"><img src="../img/add.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-left">1周 ￥<input class="price" value="280">/台</div>
+                        <div class="item-right">
+                            <span class="minus"><img src="../img/minus.png" alt=""></span>
+                            <input type="text" class="number" value="1">
+                            <span class="add"><img src="../img/add.png" alt=""></span>
+                        </div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <ul class="footer-con">
+        <li>优惠金额 ￥<span class="discount-price">20</span></li>
+        <li>金额 ￥<span class="total-price">90</span></li>
+        <li class="orderBtn">确认订单</li>
+    </ul>
+</div>
+
+</body>
+
+</html>
